@@ -36,7 +36,10 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 # Reduces boot times through caching; required in config/boot.rb
+gem 'autoprefixer-rails'
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'font-awesome-sass', '~> 5.6.1'
+gem 'simple_form'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
