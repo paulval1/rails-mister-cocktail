@@ -3,6 +3,7 @@
   <%= simple_form_for @cocktail do |f| %>
     <%= f.input :name %>
     <%= f.submit class: 'btn btn-primary' %>
+  <%end  %>
 
   <% simple_form_for @cocktail do |f| %>
     <% if @cocktail.errors.any? %>
@@ -13,10 +14,8 @@
     </ul>
     <% end %>
   <% end %>
-<% raise %>
-   <%= link_to cocktail_dose_path(@cocktail, dose), method: :delete, data: { confirm: 'Are you sure?' } do %>
-      <i class="fa fa-minus red-minus"></i>
-    <% end %>
+
+
 
 <hr>
 <%= link_to cocktails_path do %>
