@@ -10,6 +10,7 @@
 # Ingredient.create(name: "whisky")
 # Ingredient.create(name: "gin")
 # Ingredient.create(name: "vodka")
+Ingredient.destroy_all
 
 require 'json'
 require 'open-uri'

@@ -4,22 +4,21 @@
   </div>
 </div>
 
+<div class="container">
 
-<h1 style="text-decoration-line: underline;">Cocktails</h1>
+  <div class="btn-add">
+    <%= link_to "Add a new Cocktail", new_cocktail_path, class: 'btn btn-primary' %>
+  </div>
+  <div class="cards">
+    <% @cocktails.each do |cocktail| %>
 
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1542849187-5ec6ea5e6a27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=747&q=80)">
+      <h3> <%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
+    </div>
 
-<%= link_to "Add a new Cocktail", new_cocktail_path, class: 'btn btn-primary' %>
-
-<div class="cards">
-  <% @cocktails.each do |cocktail| %>
-
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-    <h3> <%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
+     <% end %>
   </div>
 
-   <% end %>
 </div>
-
-
 
 
