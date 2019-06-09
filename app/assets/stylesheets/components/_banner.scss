@@ -2,7 +2,7 @@
 .banner {
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("fruit.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), asset-url("fruit.jpg");
   padding: 150px 0;
   height: 70vh;
 
