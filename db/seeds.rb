@@ -12,12 +12,12 @@
 # Ingredient.create(name: "vodka")
 # Ingredient.destroy_all
 
-require 'json'
-require 'open-uri'
-url = "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list"
-flats = JSON.parse(open(url).read)
-  #flats is an array of objects (hashes)
-  arr = flats["drinks"]
-  arr.each do |v|
-    Ingredient.create(name: v["strIngredient1"])
-  end
+# require 'json'
+# require 'open-uri'
+# url = "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list"
+# flats = JSON.parse(open(url).read)
+#   #flats is an array of objects (hashes)
+#   arr = flats["drinks"]
+#   arr.each do |v|
+#     Ingredient.create(name: v["strIngredient1"])
+#   end
