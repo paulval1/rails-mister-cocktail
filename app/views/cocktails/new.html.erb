@@ -1,4 +1,5 @@
-<h1>New Cocktail</h1>
+<div class="container mt-4 pt-4">
+  <h1 class="m-4 pt-4">New Cocktail</h1>
 
   <%= simple_form_for @cocktail do |f| %>
     <%= f.input :name %>
@@ -17,7 +18,8 @@
 
 
 
-<hr>
-<%= link_to cocktails_path do %>
-  <i class="fa fa-history"></i> Back to list
-<% end %>
+  <hr>
+  <%= link_to cocktails_path do %>
+    <i class="fa fa-history"></i> Back to list
+  <% end %>
+</div>

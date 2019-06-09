@@ -1,13 +1,19 @@
+// style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%=asset_path "fruit.jpg"%>);"
 .banner {
   background-size: cover;
   background-position: center;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("fruit.jpg");
   padding: 150px 0;
+  height: 70vh;
+
   h1 {
     margin: 0;
     color: white;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     font-size: 32px;
     font-weight: bold;
+    text-align: center;
+    padding-top: 12vh;
   }
   p {
     font-size: 20px;
@@ -18,7 +24,7 @@
 }
 
 h1 {
-  text-align: center;
+
 }
 
 .banner-main-text {

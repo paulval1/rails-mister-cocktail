@@ -1,22 +1,29 @@
-<h1>This is the Cocktail</h1>
+<div class="container mt-4 pt-4">
+<h1 class="m-4 pt-4">This is the Cocktail</h1>
 
 <div class="container">
-  <p><%=  @cocktail.name %></p>
+  <h3 class="font-italic font-weight-bold text-warning ml-3"><%=  @cocktail.name %></h3>
 
 
-  <ul>
+  <ul >
   <% @cocktail.doses.each do |dose| %>
   <li><%=dose.ingredient.name %>  :  <%= dose.description %>
       <%= link_to dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } do %>
-        <i class="fa fa-trash destroy_dose"></i>
+        <i class="fa fa-trash destroy_dose"> </i>
       <% end %>
    </li>
   <% end %>
   </ul>
 
-
-  <%= link_to("create new dose", new_cocktail_dose_path(@cocktail) ) %>
+<div class="mt-3 pt-3">
+  <%= link_to new_cocktail_dose_path(@cocktail) do %>
+  <i class="fas fa-glass-martini"></i> Add new ingredient
+  <% end %>
+</div>
+<div class="pt-1 mt-1">
   <%= link_to cocktails_path do %>
     <i class="fa fa-history"></i> Back to list
   <% end %>
+
+</div>
 </div>
